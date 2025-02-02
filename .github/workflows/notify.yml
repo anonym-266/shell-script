@@ -9,7 +9,7 @@ jobs:
         curl -H "Content-Type: application/json" \
             -X POST \
             -d '{
-              "content": "🚀 New push detected in the repository! **${{ github.actor }}** made a **${{ github.event.action }}** on **${{ github.repository }}**"
+              "content": "🚀 New push detected in the repository! **${{ github.actor }}** made a **${{ github.action }}** on **${{ github.repository }}**"
             }' \
             "${{ secrets.WEBHOOK_ID }}"
   
