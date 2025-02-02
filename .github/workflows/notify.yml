@@ -5,7 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: send notification to discord users
-      uses: appleboy/discord-action@master
       run: |
         curl -H "Content-Type: application/json" \
             -X POST \
