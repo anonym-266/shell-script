@@ -1,13 +1,14 @@
 name: notify discord users on updates
-
 on: [push]
-
 jobs:
   send_notif:
     runs-on: ubuntu-latest
     steps:
-    - name: send message
+    - name: send notification to discord users
       uses: appleboy/discord-action@master
       with:
         webhook_id: ${{ secrets.WEBHOOK_ID }}
         webhook_token: ${{ secrets.WEBHOOK_TOKEN }}
+        color: "#eb4034"
+        username: "Desmond's GitHub Build Bot for ${{ github.repository }}"
+        message: "${{ github.actor}} made a ${{ github.action }} on ${{ github.repository }}"
