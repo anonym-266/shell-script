@@ -14,3 +14,4 @@ jobs:
         color: "#eb4034"
         username: "Desmond's GitHub Build Bot"
         message: "${{ github.actor}} made a ${{ github.action }} on ${{ github.repository }}"
+        discord_webhook_url: ${{ secrets.DISCORD_WEBHOOK_URL }}
