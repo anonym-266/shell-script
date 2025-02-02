@@ -12,5 +12,5 @@ jobs:
         webhook_id: ${{ secrets.WEBHOOK_ID }}
         webhook_token: ${{ secrets.WEBHOOK_TOKEN }}
         color: "#eb4034"
-        username: "Desmond's GitHub Build Bot for ${{ github.repository }}"
+        username: "Desmond's GitHub Build Bot"
         message: "${{ github.actor}} made a ${{ github.action }} on ${{ github.repository }}"
